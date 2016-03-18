@@ -2,43 +2,74 @@ $darkgrey : #454545;
 $mediumgrey: #c7c7c7;
 $lightgrey: #676767;
 $teal : #83c2b0;
+$lightteal: #b9ddd2;
+$darkteal: #326556;
+
 
 body {
+  font-family: 'Cabin', sans-serif;
   background-color: $darkgrey;
   color: $teal;
-  padding-bottom: 100px;
+  padding-bottom: 200px;
+  padding-top: 200px;
+  text-align: center;
 }
 
+// List
+ul {
+  text-align: left;
+}
+
+li {
+  display: block;
+}
+
+// Attempt at glyphicon lis
+// li:before {
+//   content: "\e162";
+//   font-family: 'Glyphicons Halflings';
+//   font-size: 9px;
+//   float: left;
+//   margin-top: 4px;
+//   margin-left: -17px;
+// }
+
+// Input Box
 #username {
-  background-color: $lightgrey;
+  background: none;
   color: $teal;
-  border: 0px;
+  border: 2px solid $teal;
+  height: 40px;
+  width: 200px;
+  text-align: center;
 }
 
+// Button
 .btn {
-  background-color: $lightgrey;
+  background: none;
+  border: 2px solid $teal;
+  color: $teal;
+  height: 40px;
+  width: 200px;
 }
 
 .btn:hover {
-  color: white;
+  color: $lightteal;
 }
 
-.btn:visited {
-  color: $mediumgrey;
+.btn:focus {
+  outline: none;
 }
 
-.showUsername {
-  color: white;
-}
-
+// Links
 a:link {
-  color: white;
+  color: $darkteal;
 }
 
 a:hover {
-  color: $teal;
+  color: $darkteal;
 }
 
 a:visited {
-  color: $mediumgrey;
+  color: $lightteal;
 }
