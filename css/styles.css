@@ -3,6 +3,11 @@ body {
   color: #83c2b0;
 }
 
-input, textarea{
+input, textarea {
   background-color: #A1A1A1;
+}
+
+.showUsername {
+  color: white;
+  font-weight: bold;
 }
